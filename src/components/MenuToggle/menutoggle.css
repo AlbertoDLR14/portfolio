@@ -1,0 +1,25 @@
+.menu-nav{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: var(--color-blanco);
+    padding: 40px 60px;
+    border-radius: 15px;
+}
+.menu-nav ul{
+    list-style: none;
+}
+.menu-nav ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.menu-nav ul li a{
+    text-decoration: none;
+    color: var(--color-fondo);
+    font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+    z-index: 5;
+}
