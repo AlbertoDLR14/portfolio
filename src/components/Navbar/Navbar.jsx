@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="menu main-content" id="inicio">
+    <div className="menu" id="inicio">
       <div className="logo">
         <a href="#inicio">
           <img src={images.logo} alt="Logo Alberto de los Rios" />

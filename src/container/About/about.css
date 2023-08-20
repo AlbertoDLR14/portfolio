@@ -1,0 +1,36 @@
+#sobremi{
+    height: auto;
+    position: relative;
+}
+
+.about{
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.about h2{
+    font-size: 36px;
+    font-weight: 200;
+    color: var(--color-blanco);
+    margin-bottom: 25px;
+}
+
+.cualidades{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding-bottom: 120px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1300px) {
+    .cualidades{
+    }
+}
+@media screen and (max-width: 900px) {
+    .cualidades{
+        
+    }
+}

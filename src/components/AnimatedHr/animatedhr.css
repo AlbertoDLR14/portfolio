@@ -1,0 +1,6 @@
+.divide {
+    width: 100%;
+    border: none;
+    border-top: 2px dashed var(--color-principal);
+    margin-bottom: 75px;
+  }

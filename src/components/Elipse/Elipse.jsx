@@ -8,12 +8,14 @@ const Elipse = ({
   rightElipse,
   leftElipse,
   bottomElipse,
+  topElipseImg,
+  rightElipseImg,
+  leftElipseImg,
+  bottomElipseImg,
 }) => {
   return (
     <div
       style={{
-        width: `${widthElipse}px`,
-        height: `${widthElipse}px`,
         top: topElipse !== undefined ? `${topElipse}px` : "auto",
         right: rightElipse !== undefined ? `${rightElipse}px` : "auto",
         left: leftElipse !== undefined ? `${leftElipse}px` : "auto",
@@ -21,7 +23,20 @@ const Elipse = ({
       }}
       className="degradado-elipse"
     >
-      <img className="elipse-img" src={images.fondoElipse} alt="elipse" />
+      <img
+        style={{
+          width: `${widthElipse}px`,
+          height: `${widthElipse}px`,
+          top: topElipseImg !== undefined ? `${topElipseImg}px` : "auto",
+          right: rightElipseImg !== undefined ? `${rightElipseImg}px` : "auto",
+          left: leftElipseImg !== undefined ? `${leftElipseImg}px` : "auto",
+          bottom:
+            bottomElipseImg !== undefined ? `${bottomElipseImg}px` : "auto",
+        }}
+        className="elipse-img"
+        src={images.fondoElipse}
+        alt="elipse"
+      />
     </div>
   );
 };

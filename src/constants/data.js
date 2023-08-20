@@ -12,17 +12,34 @@ const qualities = [
     title: "Diseño Gráfico",
     text: "Dando vida a la creatividad. Desde cautivadores banners hasta logos distintivos, cada pieza es un lienzo único. Iconos que cuentan historias y revistas que inspiran.",
     imgUrl: images.gDesign,
+    delay: 300,
   },
   {
     title: "Diseño UX/UI",
     text: "Creo interfaces intuitivas para experiencias innovadoras. Desde wireframes detallados hasta prototipos interactivos donde la funcionalidad y estética convergen.",
     imgUrl: images.uxUi,
+    delay: 800,
   },
   {
     title: "Desarrollo Web",
     text: "Transformo conceptos en plataformas dinámicas. Desde elegantes sitios de una sola página hasta aplicaciones más complejas.",
     imgUrl: images.dev,
+    delay: 1300,
   },
 ];
 
-export default { aboutMe, qualities };
+const skills = [
+  { name: "html" },
+  { name: "css" },
+  { name: "js" },
+  { name: "react" },
+  { name: "sql" },
+  { name: "php" },
+  { name: "figma" },
+  { name: ".psd" },
+  { name: ".ai" },
+  { name: ".xd" },
+  { name: ".indd" },
+];
+
+export default { aboutMe, qualities, skills };

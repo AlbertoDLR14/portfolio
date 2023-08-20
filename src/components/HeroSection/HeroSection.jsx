@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="hero-section">
         <div
           className="hero-author"
-          data-aos="fade-left"
+          data-aos="fade-down"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1600"
         >
@@ -30,7 +30,7 @@ const HeroSection = () => {
         </div>
         <div
           className="hero-nav"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-easing="ease-in-sine"
           data-aos-duration="1600"
         >
