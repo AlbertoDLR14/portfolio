@@ -1,6 +1,7 @@
 import AnimatedHR from "../../components/AnimatedHr/AnimatedHR";
 import { VscArrowDown } from "react-icons/vsc";
 import "./works.css";
+import Destacados from "../../components/Destacados/Destacados";
 
 const Works = () => {
   return (
@@ -18,7 +19,7 @@ const Works = () => {
       </div>
       <AnimatedHR />
 
-      <div className="trabajos-destacados">asdasdas</div>
+      <Destacados />
     </div>
   );
 };
