@@ -1,7 +1,9 @@
 import AnimatedHR from "../../components/AnimatedHr/AnimatedHR";
-import { VscArrowDown } from "react-icons/vsc";
-import "./works.css";
+import { VscAdd } from "react-icons/vsc";
 import Destacados from "../../components/Destacados/Destacados";
+import BottomMore from "../../components/BottomMore/BottomMore";
+import { Link } from "react-router-dom";
+import "./works.css";
 
 const Works = () => {
   return (
@@ -13,12 +15,11 @@ const Works = () => {
         data-aos-duration="1200"
       >
         <h2 className="portfolio-title"> Portfolio</h2>
-        <a className="enlace-trabajos" href="#">
-          <VscArrowDown />
-        </a>
+        <Link to="/trabajos">
+          <BottomMore icono={<VscAdd />} />
+        </Link>
       </div>
       <AnimatedHR />
-
       <Destacados />
     </div>
   );

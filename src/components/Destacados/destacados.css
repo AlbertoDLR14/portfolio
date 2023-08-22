@@ -3,4 +3,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    align-items: start;
+}
+
+@media screen and (max-width: 990px) {
+    .trabajos-destacados{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }

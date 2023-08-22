@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import "./enlaces.css";
 import anime from "animejs";
+import { Link } from "react-router-dom";
 
 const Enlaces = ({
   direccion,
@@ -37,15 +38,15 @@ const Enlaces = ({
   }, [isExpanded]);
 
   return (
-    <a
-      href={direccion}
+    <Link
+      to={direccion}
       className={clase}
       onClick={() => {
         toggleMenu(false);
       }}
     >
       {text}
-    </a>
+    </Link>
   );
 };
 

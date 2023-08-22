@@ -1,0 +1,31 @@
+.portfolio{
+    padding-top: 120px;
+}
+
+.portfolio-titulo{
+    font-size: 36px;
+    font-weight: 200;
+    color: var(--color-blanco);
+    margin-bottom: 25px;
+}
+
+.portfolio-flex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.portfolio-flex .card-destacados{
+    width: 100%;
+}
+
+@media screen and (max-width: 1150px) {
+    .portfolio-flex{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 650px) {
+    .portfolio-flex{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+    }
+}

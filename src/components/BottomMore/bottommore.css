@@ -1,0 +1,24 @@
+.enlace-trabajos {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--color-blanco);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blanco);
+    background-image: linear-gradient(to top, var(--color-blanco) 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position-y: 0%;
+    transition: background-position-y 0.4s ease-in-out, color 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .enlace-trabajos:hover {
+    background-position-y: 100%;
+    color: var(--color-fondo);
+  }
+
+.enlace-trabajos svg{
+    font-size: 1.4rem;
+}

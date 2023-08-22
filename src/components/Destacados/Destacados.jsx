@@ -14,15 +14,10 @@ const Destacados = () => {
         return (
           <DestacadosCard
             key={destaca.id}
+            id={destaca.id}
             titulo={destaca.titulo}
             habilidades={destaca.habilidades}
-            descripcion={destaca.descripcion}
             imgDestacada={destaca.imgDestacada}
-            imagenes={destaca.imagenes}
-            url={destaca.url}
-            urlGithub={destaca.urlGithub}
-            urlBehance={destaca.urlBehance}
-            urlAwwwards={destaca.urlAwwwards}
           />
         );
       })}

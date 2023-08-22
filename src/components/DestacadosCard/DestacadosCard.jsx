@@ -1,26 +1,18 @@
+/* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
 import "./destacadoscard.css";
 
-const DestacadosCard = ({
-  titulo,
-  habilidades,
-  descripcion,
-  imgDestacada,
-  imagenes,
-  url,
-  urlGithub,
-  urlBehance,
-  urlAwwwards,
-}) => {
+const DestacadosCard = ({ id, titulo, habilidades, imgDestacada }) => {
   return (
-    <div className="card-destacados">
+    <Link to={`/trabajos/${id}`} className="card-destacados">
       <div className="destacados-img">
         <img src={imgDestacada} alt={titulo} />
       </div>
       <div className="destacados-texto">
-        <p>{habilidades}</p>
         <h3>{titulo}</h3>
+        <p>{habilidades}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 

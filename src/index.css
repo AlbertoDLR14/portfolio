@@ -4,6 +4,7 @@
   font-family: 'Public Sans', sans-serif;
   --color-fondo: #040C1D;
   --color-blanco: #E8E8E8;
+  --color-gris: rgba(232, 232, 232, 0.367);
   --color-principal: #5D00FF;
   --color-secundario: #21D5E2;
 }
