@@ -1,13 +1,22 @@
 import Elipse from "../../components/Elipse/Elipse";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import Navbar from "../../components/Navbar/Navbar";
-import "./header.css";
+import { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { VscFoldDown } from "react-icons/vsc";
+import "./header.css";
 
 const Header = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location]);
   return (
     <>
-      <header id="inicio">
+      <header id="home">
         <Navbar />
         <Elipse
           widthElipse={1200}
@@ -17,9 +26,9 @@ const Header = () => {
           rightElipseImg={-600}
         />
         <HeroSection />
-        <a href="#sobremi">
+        <Link to="#aboutme">
           <VscFoldDown className="icono-scroll" />
-        </a>
+        </Link>
       </header>
     </>
   );

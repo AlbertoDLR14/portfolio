@@ -2,12 +2,22 @@ import AnimatedHR from "../../components/AnimatedHr/AnimatedHR";
 import { VscAdd } from "react-icons/vsc";
 import Destacados from "../../components/Destacados/Destacados";
 import BottomMore from "../../components/BottomMore/BottomMore";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import "./works.css";
 
 const Works = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#portfolio") {
+      const sobremiElement = document.getElementById("portfolio");
+      sobremiElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
-    <div id="trabajos" className="main-content">
+    <div id="portfolio" className="main-content">
       <div
         className="portfolio-enlace"
         data-aos="fade-up"

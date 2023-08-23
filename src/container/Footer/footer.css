@@ -1,0 +1,131 @@
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    margin: 120px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.footer-menu, .footer-contact, .footer-cty{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-title{
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--color-blanco);
+}
+
+.footer-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-lista li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-lista li svg{
+    font-size: 1.3rem;
+}
+
+.footer-lista li .footer-link{
+    text-decoration: none;
+    color: var(--color-blanco);
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 4px;
+    background-color: var(--color-principal);
+    transition: width 0.3s ease-out;
+    z-index: -1;
+  }
+  
+.footer-link:hover::after {
+    width: 30px;
+    z-index: -1;
+}
+.social:hover::after {
+    width: 10px;
+}
+
+.footer-fin{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    gap: 25px;
+}
+
+.footer-social .footer-lista{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.footer-up{
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-up-card{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #2916577a;
+    backdrop-filter: blur(15px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secundario);
+    font-size: 20px;
+    font-weight: 300;
+    cursor: move;
+    user-select: none;
+    box-sizing: border-box;
+    touch-action: none;
+}
+
+
+@media screen and (max-width: 750px) {
+    .footer-fin{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-social .footer-lista{
+        order: 1;
+        justify-content: center;
+    }
+    .footer-reserv{
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        flex-direction: column;
+    }
+}

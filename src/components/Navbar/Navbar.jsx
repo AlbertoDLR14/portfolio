@@ -1,9 +1,10 @@
 import { useState } from "react";
 import images from "../../constants/images";
-import "./navbar.css";
 import { VscGrabber } from "react-icons/vsc";
 import { VscChromeClose } from "react-icons/vsc";
 import MenuToggle from "../MenuToggle/MenuToggle";
+import { Link } from "react-router-dom";
+import "./navbar.css";
 
 const Navbar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -13,11 +14,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="menu" id="inicio">
+    <div className="menu" id="home">
       <div className="logo">
-        <a href="#inicio">
+        <Link to="/#home">
           <img src={images.logo} alt="Logo Alberto de los Rios" />
-        </a>
+        </Link>
       </div>
       <div className="menu-toggle" onClick={toggleMenu}>
         {isExpanded ? (

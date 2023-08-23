@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 import { useEffect } from "react";
-import "./enlaces.css";
 import anime from "animejs";
 import { Link } from "react-router-dom";
+import "./enlaces.css";
 
 const Enlaces = ({
   direccion,

@@ -3,11 +3,22 @@ import Preferencias from "../../components/Preferencias/Preferencias";
 import Skills from "../../components/Skills/Skills";
 import SobreMiFoto from "../../components/SobreMiFoto/SobreMiFoto";
 import { data } from "../../constants";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./about.css";
 
 const About = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#aboutme") {
+      const sobremiElement = document.getElementById("aboutme");
+      sobremiElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
-    <div id="sobremi" className="main-content">
+    <div id="aboutme" className="main-content">
       <div className="about">
         <h2
           className="hero-author"
@@ -28,7 +39,6 @@ const About = () => {
                 image={cual.imgUrl}
                 title={cual.title}
                 desc={cual.text}
-                delay={cual.delay}
               />
             );
           })}

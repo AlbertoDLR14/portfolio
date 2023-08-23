@@ -1,9 +1,14 @@
 import AnimatedHR from "../AnimatedHr/AnimatedHR";
 import data from "../../constants/data";
 import DestacadosCard from "../DestacadosCard/DestacadosCard";
+import { useEffect } from "react";
 import "./vertrabajos.css";
 
 const VerTrabajos = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, []);
+
   return (
     <div className="portfolio main-content">
       <h2 className="portfolio-titulo">Portfolio</h2>

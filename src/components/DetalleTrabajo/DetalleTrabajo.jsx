@@ -5,10 +5,17 @@ import AnimatedHR from "../AnimatedHr/AnimatedHR";
 import { VscArrowLeft, VscAdd } from "react-icons/vsc";
 import BottomMore from "../BottomMore/BottomMore";
 import { VscArrowRight } from "react-icons/vsc";
+import Contact from "../../container/Contact/Contact";
+import Footer from "../../container/Footer/Footer";
+import { useEffect } from "react";
 import "./detalletrabajo.css";
 
 const DetalleTrabajo = () => {
   const { trabajoId } = useParams();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, []);
 
   const trabajo = data.trabajos.find((item) => item.id === trabajoId);
 
@@ -68,6 +75,8 @@ const DetalleTrabajo = () => {
           </div>
         </div>
       </div>
+      <Contact />
+      <Footer />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import interact from "interactjs";
-import "./skills.css";
 import { data } from "../../constants";
+import "./skills.css";
 
 const Skills = () => {
   const skillsBoxRefs = useRef([]);
@@ -11,7 +11,7 @@ const Skills = () => {
     const containerRect = container.getBoundingClientRect();
     const screenWidth =
       window.innerWidth < 768
-        ? window.innerWidth * 0.25
+        ? window.innerWidth * 0.2
         : window.innerWidth < 1024
         ? window.innerWidth * 0.08
         : window.innerWidth * 0.1;
@@ -25,10 +25,10 @@ const Skills = () => {
       let y = getRandomCoordinate(containerRect.height - 80);
 
       // Verificar si las coordenadas están fuera de la pantalla
-      if (x + 80 > screenWidth) {
+      if (x + 50 > screenWidth) {
         x = screenWidth - 80;
       }
-      if (y + 80 > screenHeight) {
+      if (y + 50 > screenHeight) {
         y = screenHeight - 80;
       }
 
@@ -58,7 +58,6 @@ const Skills = () => {
             target.setAttribute("data-x", x);
             target.setAttribute("data-y", y);
 
-            // Check if the element is out of screen bounds
             if (
               x < 0 ||
               y < 0 ||

@@ -6,21 +6,13 @@
     flex-direction: column;
     gap: 120px;
     max-width: 550px;
-    min-width: 340px;
     flex: 1;
-    transition: background-color .3s ease-in-out, transform 0.1s ease-in-out;
+    transition: background-color .3s ease-in-out;
 }
 
 .preferencia:hover{
     cursor: pointer;
     background-color: #dbecff06;
-    transform: translateY(-24px) !important;
-    transition-duration: 0.3s !important;
-    transition-delay: 0s !important;
-}
-.preferencia:not([data-aos]):not(:hover){
-    transition-duration: 0s !important;
-    transition-delay: 0s !important;
 }
 
 .preferencias-img{

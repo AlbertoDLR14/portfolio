@@ -1,15 +1,9 @@
 /* eslint-disable react/prop-types */
 import "./preferencias.css";
 
-const Preferencias = ({ image, title, desc, delay }) => {
+const Preferencias = ({ image, title, desc }) => {
   return (
-    <div
-      className="preferencia"
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom"
-      data-aos-duration="1200"
-      data-aos-delay={delay}
-    >
+    <div className="preferencia">
       <div className="preferencias-img">
         <img src={image} alt={title} />
       </div>
