@@ -40,7 +40,7 @@ footer{
     font-size: 1.3rem;
 }
 
-.footer-lista li .footer-link{
+.footer-link{
     text-decoration: none;
     color: var(--color-blanco);
     font-size: 16px;
@@ -48,24 +48,23 @@ footer{
     position: relative;
 }
 
-.footer-link::after{
+ .footer-link::after{
     content: "";
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -5px;
     width: 0;
     height: 4px;
     background-color: var(--color-principal);
     transition: width 0.3s ease-out;
-    z-index: -1;
+    /* z-index: -1; */
   }
   
-.footer-link:hover::after {
+ .footer-link:hover::after {
     width: 30px;
-    z-index: -1;
 }
 .social:hover::after {
-    width: 10px;
+    width: 100%;
 }
 
 .footer-fin{
@@ -100,7 +99,7 @@ footer{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-secundario);
+    color: var(--color-blanco);
     font-size: 20px;
     font-weight: 300;
     cursor: move;

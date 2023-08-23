@@ -4,9 +4,8 @@
     user-select: none;
     overflow-x: hidden;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
   }
   .degradado-elipse .elipse-img{
-    /* opacity: .65; */
     position: absolute;
   }

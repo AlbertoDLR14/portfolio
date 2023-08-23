@@ -4,7 +4,7 @@ import "./herosection.css";
 
 const HeroSection = () => {
   return (
-    <div className="main-content">
+    <div className="main-content padding-section">
       <div className="hero-section">
         <div className="hero-author">
           <p className="author">Alberto de los Ríos</p>

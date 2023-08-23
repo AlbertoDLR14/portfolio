@@ -3,8 +3,8 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import Navbar from "../../components/Navbar/Navbar";
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { VscFoldDown } from "react-icons/vsc";
 import "./header.css";
+import { VscFoldDown } from "react-icons/vsc";
 
 const Header = () => {
   const location = useLocation();
