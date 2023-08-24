@@ -17,20 +17,32 @@ const Works = () => {
   }, [location]);
 
   return (
-    <div id="portfolio" className="main-content">
-      <div
-        className="portfolio-enlace"
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        data-aos-duration="1200"
-      >
-        <h2 className="portfolio-title"> Portfolio</h2>
-        <Link to="/trabajos">
-          <BottomMore icono={<VscAdd />} />
-        </Link>
+    <div id="portfolio">
+      <div className="main-content">
+        <div className="portfolio-enlace">
+          <h2
+            className="portfolio-title"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out"
+          >
+            {" "}
+            Portfolio
+          </h2>
+          <Link
+            to="/trabajos"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out"
+          >
+            <BottomMore icono={<VscAdd />} />
+          </Link>
+        </div>
+        <AnimatedHR />
+        <Destacados />
       </div>
-      <AnimatedHR />
-      <Destacados />
     </div>
   );
 };

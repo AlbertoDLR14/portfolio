@@ -5,6 +5,7 @@ import SobreMiFoto from "../../components/SobreMiFoto/SobreMiFoto";
 import { data } from "../../constants";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Elipse from "../../components/Elipse/Elipse";
 import "./about.css";
 
 const About = () => {
@@ -18,13 +19,21 @@ const About = () => {
   }, [location]);
 
   return (
-    <div id="aboutme" className="main-content">
-      <div className="about">
+    <div id="aboutme" className="elipse-about">
+      <Elipse
+        widthElipse={1600}
+        topElipse={50}
+        leftElipse={0}
+        topElipseImg={0}
+        leftElipseImg={-1000}
+      />
+      <div className="about main-content">
         <h2
           className="hero-author"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="1200"
+          data-aos="fade-right"
+          data-aos-duration="600"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-out"
         >
           {" "}
           Sobre mí

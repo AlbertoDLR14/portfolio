@@ -7,9 +7,10 @@ const SobreMiFoto = () => {
     <div className="about-container">
       <div
         className="container-foto"
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-        data-aos-duration="1200"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="100"
+        data-aos-easing="ease-in-out"
       >
         <img src={images.fotoPrueba} />
       </div>
@@ -17,9 +18,9 @@ const SobreMiFoto = () => {
         <div
           className="text-name"
           data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="1600"
-          data-aos-delay="600"
+          data-aos-duration="1200"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-out"
         >
           <h2 className="name">Alberto</h2>
           <h2 className="apellido">de los Ríos</h2>
@@ -28,9 +29,9 @@ const SobreMiFoto = () => {
         <div
           className="container-desc"
           data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-          data-aos-duration="1600"
-          data-aos-delay="800"
+          data-aos-duration="1400"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-out"
         >
           <p>{data.aboutMe.textProfile}</p>
         </div>

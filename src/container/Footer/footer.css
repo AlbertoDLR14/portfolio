@@ -1,6 +1,9 @@
 footer{
     display: flex;
     flex-direction: column;
+    background-image: url(../../assets/fondo-elipse-abajo.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .footer{
@@ -9,6 +12,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 60px;
+    
 }
 
 .footer-menu, .footer-contact, .footer-cty{
@@ -57,7 +61,6 @@ footer{
     height: 4px;
     background-color: var(--color-principal);
     transition: width 0.3s ease-out;
-    /* z-index: -1; */
   }
   
  .footer-link:hover::after {
@@ -73,6 +76,7 @@ footer{
     justify-content: space-between;
     padding-bottom: 25px;
     gap: 25px;
+
 }
 
 .footer-social .footer-lista{
@@ -125,6 +129,7 @@ footer{
 
 @media screen and (max-width: 600px) {
     .footer{
+        height: 100%;
         flex-direction: column;
     }
 }

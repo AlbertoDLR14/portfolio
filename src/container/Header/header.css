@@ -7,7 +7,7 @@ header{
 
 .icono-scroll{
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
     font-size: 1.4rem;
     left: 50%;
     transform: translate(-50%, -50%);

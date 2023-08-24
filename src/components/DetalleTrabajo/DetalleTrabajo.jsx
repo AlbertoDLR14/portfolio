@@ -9,6 +9,7 @@ import Contact from "../../container/Contact/Contact";
 import Footer from "../../container/Footer/Footer";
 import { useEffect } from "react";
 import "./detalletrabajo.css";
+import Elipse from "../Elipse/Elipse";
 
 const DetalleTrabajo = () => {
   const { trabajoId } = useParams();
@@ -27,6 +28,13 @@ const DetalleTrabajo = () => {
     <>
       <Navbar />
       <div className="card-container main-content">
+        <Elipse
+          widthElipse={1200}
+          topElipse={0}
+          rightElipse={0}
+          topElipseImg={-600}
+          rightElipseImg={-600}
+        />
         <div className="enlaces-work">
           <BottomMore icono={<VscArrowLeft />} atras="atras" />
           <Link to="/trabajos">
@@ -36,19 +44,37 @@ const DetalleTrabajo = () => {
 
         <AnimatedHR />
 
-        <div className="card-title">
+        <div
+          className="card-title"
+          data-aos="fade-right"
+          data-aos-duration="600"
+          data-aos-delay="100"
+          data-aos-easing="ease-in-out"
+        >
           <h2>{trabajo.titulo}</h2>
           <p>{trabajo.habilidades}</p>
         </div>
 
         <div className="card-description">
           <AnimatedHR />
-          <div className="card-text">
+          <div
+            className="card-text"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out"
+          >
             <p className="card-text-title">Descripción:</p>
             <p className="card-text-desc">{trabajo.descripcion}</p>
           </div>
 
-          <div className="card-urls">
+          <div
+            className="card-urls"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out"
+          >
             {trabajo.urls.map((enlace, index) => {
               return enlace.url ? (
                 <div key={index} className="card-urls-enlace">
@@ -64,7 +90,13 @@ const DetalleTrabajo = () => {
               ) : null;
             })}
           </div>
-          <div className="card-images">
+          <div
+            className="card-images"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-easing="ease-in-out"
+          >
             {trabajo.imagenes.map((enlace, index) => {
               return (
                 <div key={index} className="card-images-container">

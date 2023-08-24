@@ -73,15 +73,13 @@
 
 @media screen and (max-width: 1600px) {
     .hero-section{
-        width: 90%;
-        margin-left: 20px;
+        padding-left: 100px;
     }
 }
 @media screen and (max-width: 1300px) {
     .hero-section{
         width: 90%;
-        /* margin-left: 50px;
-        padding-top: 120px; */
+        width: auto;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -108,8 +106,12 @@
 
 @media screen and (max-width: 880px) {
     .hero-section{
-        margin-left: 50px;
-        padding-top: 120px;
+        padding-left: 60px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .hero-section{
+        padding-left: 0px;
     }
 }
 

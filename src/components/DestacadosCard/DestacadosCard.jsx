@@ -4,7 +4,14 @@ import "./destacadoscard.css";
 
 const DestacadosCard = ({ id, titulo, habilidades, imgDestacada }) => {
   return (
-    <Link to={`/trabajos/${id}`} className="card-destacados">
+    <Link
+      to={`/trabajos/${id}`}
+      className="card-destacados"
+      data-aos="fade-up"
+      data-aos-duration="600"
+      data-aos-delay="100"
+      data-aos-easing="ease-in-out"
+    >
       <div className="destacados-img">
         <img src={imgDestacada} alt={titulo} />
       </div>

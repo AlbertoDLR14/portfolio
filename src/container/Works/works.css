@@ -12,4 +12,7 @@
 
 #portfolio{
     padding: 55px 0;
+    background-image: url(../../assets/fondo-elipse-derecha.svg);
+    background-repeat: no-repeat;
+    background-position: right;
 }
