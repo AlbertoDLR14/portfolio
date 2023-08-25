@@ -4,11 +4,35 @@
     height: auto;
     overflow: hidden;
     text-decoration: none;
+
 }
 
 .destacados-img{
     width: 100%;
+    position: relative;
+    display: inline-block;
 }
+
+.tooltip-img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    pointer-events: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #2916577a;
+    backdrop-filter: blur(12px);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blanco);
+  }
+
+  .tooltip-img svg{
+    font-size: 2rem;
+  }
 
 .destacados-img img{
     width: 100%;

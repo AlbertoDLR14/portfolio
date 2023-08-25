@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import { VscMail } from "react-icons/vsc";
 import { VscCallIncoming } from "react-icons/vsc";
 import { VscLocation } from "react-icons/vsc";
-import interact from "interactjs";
 import { useEffect } from "react";
 import { VscFoldUp } from "react-icons/vsc";
+import { Tooltip } from "react-tooltip";
+import interact from "interactjs";
+
 import "./footer.css";
 
 const Footer = () => {
@@ -95,9 +97,16 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-up">
-          <div className="footer-up-card" onClick={goUp}>
+          <div
+            className="footer-up-card"
+            data-tooltip-id="tooltip-up"
+            data-tooltip-content="Ir Arriba!"
+            data-tooltip-place="top"
+            onClick={goUp}
+          >
             <VscFoldUp />
           </div>
+          <Tooltip id="tooltip-up" />
         </div>
       </div>
       <div className="footer-fin">

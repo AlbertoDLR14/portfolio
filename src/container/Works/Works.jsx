@@ -4,6 +4,7 @@ import Destacados from "../../components/Destacados/Destacados";
 import BottomMore from "../../components/BottomMore/BottomMore";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Tooltip } from "react-tooltip";
 import "./works.css";
 
 const Works = () => {
@@ -36,9 +37,13 @@ const Works = () => {
             data-aos-duration="600"
             data-aos-delay="100"
             data-aos-easing="ease-in-out"
+            data-tooltip-id="tooltip-mas"
+            data-tooltip-content="Ver más trabajos"
+            data-tooltip-place="left"
           >
             <BottomMore icono={<VscAdd />} />
           </Link>
+          <Tooltip id="tooltip-mas" />
         </div>
         <AnimatedHR />
         <Destacados />

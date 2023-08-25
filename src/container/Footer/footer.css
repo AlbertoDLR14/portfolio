@@ -112,6 +112,14 @@ footer{
     touch-action: none;
 }
 
+#tooltip-up, #tooltip-mas, #tooltip-mas-trabajo{
+    background-color: #2916577a;
+    backdrop-filter: blur(15px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: var(--color-blanco);
+    font-weight: 100;
+}
+
 
 @media screen and (max-width: 750px) {
     .footer-fin{

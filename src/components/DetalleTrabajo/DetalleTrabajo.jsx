@@ -8,8 +8,9 @@ import { VscArrowRight } from "react-icons/vsc";
 import Contact from "../../container/Contact/Contact";
 import Footer from "../../container/Footer/Footer";
 import { useEffect } from "react";
-import "./detalletrabajo.css";
 import Elipse from "../Elipse/Elipse";
+import { Tooltip } from "react-tooltip";
+import "./detalletrabajo.css";
 
 const DetalleTrabajo = () => {
   const { trabajoId } = useParams();
@@ -36,10 +37,24 @@ const DetalleTrabajo = () => {
           rightElipseImg={-600}
         />
         <div className="enlaces-work">
-          <BottomMore icono={<VscArrowLeft />} atras="atras" />
-          <Link to="/trabajos">
+          <div
+            className="contenedor-atras"
+            data-tooltip-id="tooltip-mas-trabajo"
+            data-tooltip-content="Ir atrás"
+            data-tooltip-place="right"
+          >
+            <BottomMore icono={<VscArrowLeft />} atras="atras" />
+          </div>
+          <Tooltip id="tooltip-mas-trabajo" />
+          <Link
+            to="/trabajos"
+            data-tooltip-id="tooltip-mas-trabajo"
+            data-tooltip-content="Ver más trabajos"
+            data-tooltip-place="left"
+          >
             <BottomMore icono={<VscAdd />} />
           </Link>
+          <Tooltip id="tooltip-mas-trabajo" />
         </div>
 
         <AnimatedHR />

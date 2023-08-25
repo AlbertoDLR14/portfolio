@@ -48,6 +48,7 @@ const About = () => {
                 image={cual.imgUrl}
                 title={cual.title}
                 desc={cual.text}
+                index={index}
               />
             );
           })}
