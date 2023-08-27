@@ -22,3 +22,30 @@
 .enlace-trabajos svg{
     font-size: 1.4rem;
 }
+
+.enlace-trabajos-texto {
+    width: auto;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blanco);
+    background: var(--color-principal);
+    background-image: linear-gradient(to top, var(--color-blanco) 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position-y: 0%;
+    transition: background-position-y 0.4s ease-in-out, color 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .enlace-trabajos-texto:hover {
+    background-position-y: 100%;
+    color: var(--color-fondo);
+  }
+
+.enlace-trabajos-texto svg{
+    font-size: 1.4rem;
+    margin-right: 10px;
+}

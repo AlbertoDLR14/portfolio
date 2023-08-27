@@ -12,6 +12,7 @@ import cryptoImg from "../assets/crypto.png";
 import rockDestacado from "../assets/destacado-rock.png";
 import rock from "../assets/rock.png";
 import rock2 from "../assets/rock-dos.png";
+import yo from "../assets/yo.jpg";
 
 export default {
   gDesign,
@@ -28,4 +29,5 @@ export default {
   rockDestacado,
   rock,
   rock2,
+  yo,
 };

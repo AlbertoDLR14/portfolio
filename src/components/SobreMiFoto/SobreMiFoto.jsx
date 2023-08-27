@@ -1,6 +1,8 @@
 import { data } from "../../constants";
 import images from "../../constants/images";
+import { VscCloudDownload } from "react-icons/vsc";
 import "./sobremifoto.css";
+import BottomMore from "../BottomMore/BottomMore";
 
 const SobreMiFoto = () => {
   return (
@@ -12,7 +14,7 @@ const SobreMiFoto = () => {
         data-aos-delay="100"
         data-aos-easing="ease-in-out"
       >
-        <img src={images.fotoPrueba} />
+        <img src={images.yo} />
       </div>
       <div className="container-text">
         <div
@@ -25,6 +27,9 @@ const SobreMiFoto = () => {
           <h2 className="name">Alberto</h2>
           <h2 className="apellido">de los Ríos</h2>
           <p className="puesto">{data.aboutMe.work}</p>
+          <a href="#" className="cv" target="_blank">
+            <BottomMore icono={<VscCloudDownload />} texto="Currículum" />
+          </a>
         </div>
         <div
           className="container-desc"
