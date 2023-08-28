@@ -2,12 +2,9 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://albertodlr14.github.io/portfolio",
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -16,7 +13,6 @@
     "animejs": "^3.2.1",
     "aos": "^2.3.4",
     "framer-motion": "^10.16.1",
-    "gh-pages": "^6.0.0",
     "install": "^0.13.0",
     "interactjs": "^1.10.18",
     "npm": "^9.8.1",
