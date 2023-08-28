@@ -13,6 +13,7 @@
     "animejs": "^3.2.1",
     "aos": "^2.3.4",
     "framer-motion": "^10.16.1",
+    "gh-pages": "^6.0.0",
     "install": "^0.13.0",
     "interactjs": "^1.10.18",
     "npm": "^9.8.1",
