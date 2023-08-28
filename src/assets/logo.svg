@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 900 900" style="enable-background:new 0 0 900 900;" xml:space="preserve">
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#5D00FF;}
 </style>
+<rect x="-197.6" class="st0" width="123.6" height="33.3"/>
+<polygon class="st0" points="-74,66.7 -74,100 -130.9,100 -97.6,66.7 "/>
+<polygon class="st0" points="-74,200 -74,166.7 -130.9,166.7 -97.6,200 "/>
+<polygon class="st0" points="-74,90.2 -117.1,133.3 -164.2,133.3 -97.6,66.7 "/>
+<polygon class="st0" points="-74,176.4 -117.1,133.3 -164.2,133.3 -97.6,200 "/>
+<rect x="-74" y="100" class="st0" width="33.3" height="66.7"/>
+<path class="st0" d="M-74,66.7V0h14.6C-49,0-40.6,8.4-40.6,18.8v47.9H-74z"/>
+<image style="overflow:visible;enable-background:new    ;" width="565" height="565" xlink:href="194D2D0E.jpg"  transform="matrix(0.9982 0 0 0.9982 269.0869 -427.1739)">
+</image>
+<image style="overflow:visible;enable-background:new    ;" width="565" height="565" xlink:href="194D2D01.jpg"  transform="matrix(0.9982 0 0 0.9982 883.6957 -244.2391)">
+</image>
 <g>
-	<polygon class="st0" points="450,352.91 723.54,626.45 900,450 450,0 0,450 176.45,626.45 	"/>
-	
-		<rect x="325.23" y="598.77" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -379.8218 530.1193)" class="st0" width="249.54" height="249.54"/>
+	<path class="st0" d="M65.1,48.8l50.1,50.4H92h-8.5l-5.9,6.1L65.1,118V48.8 M45,0v167.6l47-48.3h71.7L45,0L45,0z"/>
+	<polygon class="st0" points="93.5,200 116.7,200 125.2,200 129,196.1 129,196.1 163.7,160.5 163.7,131.6 116.7,179.8 45,179.8 
+		65,200 	"/>
 </g>
+<path class="st0" d="M65.1,314.1l50.1,50.4H92h-8.5l-5.9,6.1l-12.4,12.7L65.1,314.1 M45,265.3v167.6l47-48.3h71.7L45,265.3L45,265.3
+	z"/>
+<polygon class="st0" points="159.7,453 183,453 191.5,453 195.3,449.2 195.3,449.2 230,413.5 230,384.6 183,432.9 111.3,432.9 
+	131.3,453 "/>
+<g>
+	<polygon class="st0" points="175.3,419.1 169.8,419 120.1,418.3 107.9,418.2 73.1,453 57.2,453 57.1,440.5 93.7,403.9 99.7,397.9 
+		105.1,398 154.8,398.6 154.8,398.7 	"/>
+	<polygon class="st0" points="209.7,384.6 197.7,396.6 193.8,400.6 181.3,413.1 175.3,419.1 169.8,419 120.1,418.3 99.7,397.9 
+		105.1,398 154.8,398.7 165.8,398.8 167,398.8 181.2,384.6 	"/>
+</g>
+<polygon class="st0" points="292.1,224.9 292.1,248.1 271.2,227.2 245.9,227.2 310.1,291.8 310.1,206.9 "/>
 </svg>

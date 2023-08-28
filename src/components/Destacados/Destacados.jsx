@@ -3,7 +3,7 @@ import DestacadosCard from "../DestacadosCard/DestacadosCard";
 import "./destacados.css";
 
 const Destacados = () => {
-  const idsSeleccionados = ["1", "2", "3"];
+  const idsSeleccionados = ["1", "2", "4"];
   const trabajosFiltrtados = data.trabajos.filter((item) =>
     idsSeleccionados.includes(item.id)
   );

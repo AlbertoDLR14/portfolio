@@ -27,7 +27,12 @@ const SobreMiFoto = () => {
           <h2 className="name">Alberto</h2>
           <h2 className="apellido">de los Ríos</h2>
           <p className="puesto">{data.aboutMe.work}</p>
-          <a href="#" className="cv" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/1CC8TNY0O1LTvNCZ49HhSWjY5vI_UaaN5/view?usp=sharing"
+            className="cv"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BottomMore icono={<VscCloudDownload />} texto="Currículum" />
           </a>
         </div>
