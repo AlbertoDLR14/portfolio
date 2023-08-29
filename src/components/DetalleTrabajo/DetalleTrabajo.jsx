@@ -47,7 +47,7 @@ const DetalleTrabajo = () => {
           </div>
           <Tooltip id="tooltip-mas-trabajo" />
           <Link
-            to="/trabajos"
+            to="/portfolio/trabajos"
             data-tooltip-id="tooltip-mas-trabajo"
             data-tooltip-content="Ver más trabajos"
             data-tooltip-place="left"

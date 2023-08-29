@@ -24,7 +24,7 @@ const DestacadosCard = ({ id, titulo, habilidades, imgDestacada }) => {
   };
 
   return (
-    <Link to={`/trabajos/${id}`} className="card-destacados">
+    <Link to={`/portfolio/trabajos/${id}`} className="card-destacados">
       <div
         className="destacados-img"
         style={{ position: "relative" }}

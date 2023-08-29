@@ -26,7 +26,7 @@ const Header = () => {
           rightElipseImg={-600}
         />
         <HeroSection />
-        <Link to="#aboutme">
+        <Link to="/portfolio/#aboutme">
           <VscFoldDown className="icono-scroll" />
         </Link>
       </header>

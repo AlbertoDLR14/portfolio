@@ -76,15 +76,15 @@ const HeroSection = () => {
         >
           <p>
             ¡Descubre mi{" "}
-            <Link className="hero-enlace" to="#aboutme">
+            <Link className="hero-enlace" to="/portfolio/#aboutme">
               historia
             </Link>
             ,{" "}
-            <Link className="hero-enlace" to="#portfolio">
+            <Link className="hero-enlace" to="/portfolio/#portfolio">
               mis trabajos
             </Link>{" "}
             o{" "}
-            <Link className="hero-enlace" to="#contact">
+            <Link className="hero-enlace" to="/portfolio/#contact">
               escríbeme
             </Link>{" "}
             para conocerme!

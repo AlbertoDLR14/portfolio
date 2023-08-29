@@ -32,7 +32,7 @@ const Works = () => {
             Portfolio
           </h2>
           <Link
-            to="/trabajos"
+            to="/portfolio/trabajos"
             data-aos="fade-right"
             data-aos-duration="600"
             data-aos-delay="100"

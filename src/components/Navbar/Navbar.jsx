@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="menu" id="home">
       <div className="logo">
-        <Link to="/#home">
+        <Link to="/portfolio/#home">
           <img src={images.logo} alt="Logo Alberto de los Rios" />
         </Link>
       </div>

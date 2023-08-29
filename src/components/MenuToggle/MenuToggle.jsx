@@ -8,21 +8,21 @@ const MenuToggle = ({ isExpanded, toggleMenu }) => {
       <ul>
         <li>
           <Enlaces
-            direccion="/#home"
+            direccion="/portfolio/#home"
             clase="menu-link"
             text="Inicio"
             isExpanded={isExpanded}
             toggleMenu={toggleMenu}
           />
           <Enlaces
-            direccion="/#aboutme"
+            direccion="/portfolio/#aboutme"
             clase="menu-link"
             text="Sobre mí"
             isExpanded={isExpanded}
             toggleMenu={toggleMenu}
           />
           <Enlaces
-            direccion="/#portfolio"
+            direccion="/portfolio/#portfolio"
             clase="menu-link"
             text="Portfolio"
             isExpanded={isExpanded}

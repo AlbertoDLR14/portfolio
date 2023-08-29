@@ -49,17 +49,17 @@ const Footer = () => {
           <p className="footer-title">Menú</p>
           <ul className="footer-lista">
             <li>
-              <Link to="/#home" className="footer-link">
+              <Link to="/portfolio/#home" className="footer-link">
                 Inicio
               </Link>
             </li>
             <li>
-              <Link to="/#aboutme" className="footer-link">
+              <Link to="/portfolio/#aboutme" className="footer-link">
                 Sobre mí
               </Link>
             </li>
             <li>
-              <Link to="/#portfolio" className="footer-link">
+              <Link to="/portfolio/#portfolio" className="footer-link">
                 Portfolio
               </Link>
             </li>
